@@ -1,0 +1,71 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    background: white;
+    font-family: "proxima-nova";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p {
+    font-size: 1em;
+}
+
+p span {
+    font-weight: 700;
+}
+
+h2 {
+    color: black;
+    margin: 0;
+}
+
+.timeline {
+    width: 80%;
+    display: inline-block;
+    background: #eee;
+    padding: 6% 10% 0 10%;
+}
+
+.article {
+    background: white;
+    display: inline-block;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+
+.article h2 {
+    color: #D95043;
+}
+
+.article img {
+    width: 100%;
+}
+
+.article p {
+    color: #666;
+}
+
+.button {
+    background: linear-gradient(to bottom, #50B1BF 50%, #479eaa 50%);
+    background-size: 100% 200%;
+    background-position: left 10%;
+    background-repeat: no-repeat;
+    padding: 0.7em 1em 0.7em 1em;
+    float: right;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-position: left 100%;
+}
