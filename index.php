@@ -23,13 +23,24 @@ include 'conn.php';
 
 <div class="timeline">
 
-<?php foreach($db->query("SELECT * FROM nyval ORDER BY id DESC") as $row): ?>
+<?php foreach($db->query("SELECT * FROM nyval ORDER BY pubDate DESC") as $row): ?>
 
-	<div class="article">
-		<h2><?php echo $row['title']; ?></h2><br />
-		<?php echo $row['image']; ?>
-		<a class="button" href="<?php echo $row['link']; ?>">Läs mer</a>
-	</div><br />
+	<div class="article-wrapper">
+
+		<div class="article left">
+			<h2><?php echo $row['title']; ?></h2><br />
+			<?php echo $row['image']; ?>
+			<a class="button" href="<?php echo $row['link']; ?>">Läs mer</a>
+		</div><br />
+
+		
+
+		<div class="date">
+			<div class="ball"><i class="fa fa-newspaper-o"></i></div>
+			<p><?php echo $row['pubDate']; ?></p>
+		</div>
+
+	</div>
 
 <?php endforeach; ?>
 

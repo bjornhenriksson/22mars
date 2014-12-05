@@ -26,39 +26,79 @@ h2 {
 }
 
 .timeline {
+    background: linear-gradient(to right, #f2f8f9 73%, #e8eff0 28%);
     width: 80%;
     display: inline-block;
-    background: #eee;
     padding: 6% 10% 0 10%;
 }
 
+.article-wrapper {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
 .article {
+    width: 70%;
     background: white;
     display: inline-block;
-    padding: 1em;
+    padding: 1.5em 1em 1.5em 1em;
     border-radius: 5px;
     margin-bottom: 2em;
 }
 
 .article h2 {
-    color: #D95043;
+    width: 70%;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #aaa;
 }
 
 .article img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .article p {
     color: #666;
 }
 
+.ball {
+    width: 4em;
+    height: 4em;
+    background: #e3235e;
+    border-radius: 4em;
+    text-align: center;
+    border: 3px solid white;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+    float: left;
+}
+
+.ball i {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 0.85em;
+}
+
+.date {
+    position: absolute;
+    top: 0;
+    left: 75%;
+}
+
+.date p {
+    position: absolute;
+    width: 10em;
+    left: 5em;
+    color: #ccc;
+}
+
 .button {
-    background: linear-gradient(to bottom, #50B1BF 50%, #479eaa 50%);
+    background: linear-gradient(to bottom, #32dcf5 50%, #2bc9e0 50%);
     background-size: 100% 200%;
     background-position: left 10%;
     background-repeat: no-repeat;
     padding: 0.7em 1em 0.7em 1em;
-    float: right;
     text-decoration: none;
     color: white;
     border-radius: 5px;
