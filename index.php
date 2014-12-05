@@ -21,7 +21,15 @@ include 'conn.php';
 
 ?>
 
+<header>
+
+	<h2>Nyval 22mars</h2>
+
+</header>
+
 <div class="timeline">
+
+	<h3>Detta har hänt</h3>
 
 <?php foreach($db->query("SELECT * FROM nyval ORDER BY pubDate DESC") as $row): ?>
 

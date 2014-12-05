@@ -25,11 +25,31 @@ h2 {
     margin: 0;
 }
 
+header {
+    background: url(../img/riks.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 80%;
+    padding: 20% 10% 8% 10%;
+    display: inline-block;
+}
+
+header h2 {
+    color: white;
+    font-size: 2.5em;
+}
+
 .timeline {
     background: linear-gradient(to right, #f2f8f9 73%, #e8eff0 28%);
     width: 80%;
     display: inline-block;
     padding: 6% 10% 0 10%;
+}
+
+.timeline h3 {
+    color: #e3235e;
+    font-size: 2em;
+    margin: 1em 0 2em 0;
 }
 
 .article-wrapper {
@@ -90,7 +110,7 @@ h2 {
     position: absolute;
     width: 10em;
     left: 5em;
-    color: #ccc;
+    color: #aaa;
 }
 
 .button {
